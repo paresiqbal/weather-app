@@ -1,8 +1,12 @@
-<script setup></script>
+<script setup>
+import { RouterView } from "vue-router";
+import SiteNavigation from "./components/SiteNavigation.vue";
+</script>
 
 <template>
-  <div>
-    <h1 class="text-4xl font-bold">Hello World</h1>
+  <div class="flex flex-col min-h-screen">
+    <SiteNavigation />
+    <RouterView />
   </div>
 </template>
 
